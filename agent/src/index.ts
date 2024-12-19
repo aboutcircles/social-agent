@@ -47,7 +47,7 @@ import readline from "readline";
 import { fileURLToPath } from "url";
 import yargs from "yargs";
 
-import { mainCharacter } from "../mainCharacter";
+import { mainCharacter } from "../character/mainCharacter";
 import { docsProvider } from "./docsProvider";
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file

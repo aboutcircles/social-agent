@@ -21,11 +21,11 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc turbo.json ./
 COPY agent ./agent
 COPY packages ./packages
 COPY scripts ./scripts
-COPY characters ./characters
+COPY agent/character/maincharacter.ts ./characters/maincharacter.ts
 
 # Install dependencies and build the project
 RUN pnpm install \
-    && pnpm build \
+    && pnpm build-docker \
     && pnpm prune --prod
 
 # Create a new stage for the final image
