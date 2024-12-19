@@ -17,7 +17,7 @@
     "include": [
         "src",
         "src/index.ts",
-        "character/mainCharacter.ts",
+        "mainCharacter.ts",
         "src/docsProvider.ts",
         "src/ragHandler.ts"
     ]
