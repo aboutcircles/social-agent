@@ -73,7 +73,7 @@ export const mainCharacter : Character = {
             - A **7% annual demurrage** (daily decay) is applied to all Circles balances, preventing hoarding and encouraging active use of the currency. This ensures a dynamic and equitable economy.
 
             5. **Transparent and Predictable Monetary Policy:**
-            - Circles' issuance rate and demurrage are designed for **long-term equilibrium**, stabilizing at ~125,142 CRC per participant after 42 years of consistent minting.
+            - Circles' issuance rate and demurrage are designed for **long-term equilibrium**, stabilizing at 120.804,56 CRC per participant.
 
             6. **Empowering Economic Sovereignty:**
             - Participants act as their own "central banks," minting and backing their currencies as they see fit. This sovereignty allows communities to redefine monetary policies around their values and needs.
