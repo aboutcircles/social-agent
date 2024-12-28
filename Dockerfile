@@ -24,7 +24,7 @@ COPY scripts ./scripts
 
 # Install dependencies and build the project
 RUN pnpm install \
-    && pnpm build-docker \
+    && pnpm build \
     && pnpm prune --prod
 
 # Create a new stage for the final image
