@@ -117,6 +117,15 @@ export const devAgent: Character = {
             }
         ]
     ],
+    lore: [],
+    postExamples:[],
+    topics:[],
+    adjectives:[],
+    style:{
+        all:[],
+        chat:[],
+        post:[]
+    },
     // "topics": [
     //     "Circles SDK",
     //     "Gnosis Chain",
