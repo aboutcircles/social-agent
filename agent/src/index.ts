@@ -48,6 +48,7 @@ import { fileURLToPath } from "url";
 import yargs from "yargs";
 
 import { mainCharacter } from "./mainCharacter";
+import { testerAgent } from "./testCharacters";
 import { devAgent } from "./devCharacter";
 import { docsProvider } from "./docsProvider";
 
@@ -186,7 +187,7 @@ export async function loadCharacters(
 
     if (loadedCharacters.length === 0) {
         elizaLogger.info("No characters found, using default character");
-        loadedCharacters.push(mainCharacter);
+        loadedCharacters.push(testerAgent);
     }
 
     return loadedCharacters;
@@ -468,7 +469,7 @@ const startAgents = async () => {
 
     let charactersArg = args.characters || args.character;
 
-    let characters = [mainCharacter];
+    let characters = [testerAgent];
 
     if (charactersArg) {
         characters = await loadCharacters(charactersArg);

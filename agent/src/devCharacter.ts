@@ -119,19 +119,25 @@ export const devAgent: Character = {
     ],
     lore: [],
     postExamples:[],
-    topics:[],
+    topics:[
+        "Circles SDK",
+        "Gnosis Chain",
+        "Smart Contracts",
+        "Trust Networks",
+        "ERC1155 Tokens",
+        "Developer Documentation",
+        "SDK implementation",
+        "Smart contracts",
+        "API usage",
+        "Technical specifications",
+        "Integration guides",
+        "Development setup",
+        "Protocol details"
+    ],
     adjectives:[],
     style:{
         all:[],
         chat:[],
         post:[]
     },
-    // "topics": [
-    //     "Circles SDK",
-    //     "Gnosis Chain",
-    //     "Smart Contracts",
-    //     "Trust Networks",
-    //     "ERC1155 Tokens",
-    //     "Developer Documentation"
-    // ]
 };
