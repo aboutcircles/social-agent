@@ -49,6 +49,7 @@ import yargs from "yargs";
 
 import { mainCharacter } from "./mainCharacter";
 import { testerAgent } from "./testCharacters";
+import { circolinoAgent } from "./circolinoCharacter";
 import { devAgent } from "./devCharacter";
 import { docsProvider } from "./docsProvider";
 
