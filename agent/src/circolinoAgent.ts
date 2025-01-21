@@ -1,6 +1,6 @@
 import { Character, ModelProviderName, Clients } from "@ai16z/eliza";
 
-export const testerAgent: Character = {
+export const circolinoAgent: Character = {
     name: "Circolino",
     clients: [Clients.DISCORD],
     modelProvider: ModelProviderName.ANTHROPIC,
