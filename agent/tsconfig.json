@@ -19,6 +19,7 @@
         "src/index.ts",
         "mainCharacter.ts",
         "src/docsProvider.ts",
-        "src/ragHandler.ts"
+        "src/ragHandler.ts",
+        "src/circolinoCharacter.ts"
     ]
 }

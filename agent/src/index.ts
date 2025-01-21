@@ -49,7 +49,7 @@ import yargs from "yargs";
 
 import { mainCharacter } from "./mainCharacter";
 import { testerAgent } from "./testCharacters";
-import { circolinoAgent } from "./circolinoCharacter";
+import { circolinoCharacter } from "./circolinoCharacter";
 import { devAgent } from "./devCharacter";
 import { docsProvider } from "./docsProvider";
 
@@ -188,7 +188,7 @@ export async function loadCharacters(
 
     if (loadedCharacters.length === 0) {
         elizaLogger.info("No characters found, using default character");
-        loadedCharacters.push(testerAgent);
+        loadedCharacters.push(circolinoCharacter);
     }
 
     return loadedCharacters;
@@ -470,7 +470,7 @@ const startAgents = async () => {
 
     let charactersArg = args.characters || args.character;
 
-    let characters = [testerAgent];
+    let characters = [circolinoCharacter];
 
     if (charactersArg) {
         characters = await loadCharacters(charactersArg);
