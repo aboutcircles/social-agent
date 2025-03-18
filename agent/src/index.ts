@@ -47,7 +47,10 @@ import readline from "readline";
 import { fileURLToPath } from "url";
 import yargs from "yargs";
 
-import { mainCharacter } from "../mainCharacter";
+import { mainCharacter } from "./mainCharacter";
+
+import { devAgent } from "./devCharacter";
+
 import { docsProvider } from "./docsProvider";
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
@@ -185,7 +188,7 @@ export async function loadCharacters(
 
     if (loadedCharacters.length === 0) {
         elizaLogger.info("No characters found, using default character");
-        loadedCharacters.push(mainCharacter);
+        loadedCharacters.push(mainCharacter, devAgent);
     }
 
     return loadedCharacters;
@@ -315,7 +318,21 @@ export async function initializeClients(
     }
 
     if (clientTypes.includes("discord")) {
-        clients.push(await DiscordClientInterface.start(runtime));
+        const discordToken = character.settings?.secrets?.DISCORD_BOT_TOKEN;
+        const discordAppId =
+            character.settings?.secrets?.DISCORD_APPLICATION_ID;
+
+        if (!discordToken || !discordAppId) {
+            throw new Error(
+                `Missing Discord credentials for character: ${character.name}`
+            );
+        }
+
+        // Inject tokens into process.env (since startDiscord expects them from env)
+        process.env.DISCORD_BOT_TOKEN = discordToken;
+        process.env.DISCORD_APPLICATION_ID = discordAppId;
+
+        clients.push(await DiscordClientInterface.start(runtime)); // Now it works
     }
 
     if (clientTypes.includes("telegram")) {
@@ -467,7 +484,7 @@ const startAgents = async () => {
 
     let charactersArg = args.characters || args.character;
 
-    let characters = [mainCharacter];
+    let characters = [devAgent, mainCharacter];
 
     if (charactersArg) {
         characters = await loadCharacters(charactersArg);
