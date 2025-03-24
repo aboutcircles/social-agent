@@ -15,6 +15,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { initializeDbCache } from "./cache/index.ts";
 import { mainCharacter } from "./mainCharacter.ts";
+import { devAgent } from "./devCharacter.ts";
 import { startChat } from "./chat/index.ts";
 import { initializeClients } from "./clients/index.ts";
 import {
@@ -132,7 +133,7 @@ const startAgents = async () => {
   const args = parseArguments();
 
   let charactersArg = args.characters || args.character;
-  let characters = [mainCharacter];
+  let characters = [mainCharacter, devAgent];
 
   console.log("charactersArg", charactersArg);
   if (charactersArg) {
