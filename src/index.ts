@@ -14,8 +14,8 @@ import net from "net";
 import path from "path";
 import { fileURLToPath } from "url";
 import { initializeDbCache } from "./cache/index.ts";
-import { mainCharacter } from "./mainCharacter.ts";
-import { devAgent } from "./devCharacter.ts";
+import { mainCharacter } from "./characters/mainCharacter.ts";
+import { devAgent } from "./characters/devCharacter.ts";
 import { startChat } from "./chat/index.ts";
 import { initializeClients } from "./clients/index.ts";
 import {
@@ -56,11 +56,7 @@ export function createAgent(
     modelProvider: character.modelProvider,
     evaluators: [],
     character,
-    plugins: [
-      bootstrapPlugin,
-      nodePlugin,
-      character.settings?.secrets?.WALLET_PUBLIC_KEY ? solanaPlugin : null,
-    ].filter(Boolean),
+    plugins: [].filter(Boolean),
     providers: [],
     actions: [],
     services: [],

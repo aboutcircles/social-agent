@@ -1,0 +1,91 @@
+Introduction
+Circles is a revolutionary money protocol designed to provide a decentralised and accessible alternative to traditional fiat money. With its unique approach to money creation and distribution, Circles aims to create a financial system that is inherently fair and equitable. This article explores the fundamental concepts, mechanics, and potential of the Circles protocol and its native currency, CRC.
+
+Core Principles of Circles
+Circles is built on several key principles that distinguish it from both traditional currencies and other cryptocurrencies:
+
+1. Universal Access
+Anyone can create an account in the Circles ecosystem without any gatekeeping mechanisms. There are no centralised authorities controlling who can participate, making it radically accessible.
+
+2. Distributed Issuance
+Each human account in Circles has the right to create their own, individual CRC at a rate of 1 CRC per hour. This means every participant becomes an issuer of currency, democratising the power of money creation.
+
+3. Demurrage
+Every CRC gradually loses nominal value at a rate of 7% per year. This feature prevents hoarding and encourages circulation of the currency while ensuring that early adopters don’t receive an unfair advantage.
+
+4. Trust Networks
+Users can trust one another within the system. If user A trusts user B, then anyone holding CRC created by B can swap them for any CRC held by A at a 1:1 rate. These trust connections form the backbone of the Circles economy.
+
+5. Groups
+Anyone can create a group and add other Circles accounts as members by trusting them. Groups support their own CRC, which can be created from and redeemed against CRC created by its members at a 1:1 rate, enabling community-based economic organisation.
+
+How Circles Works
+The Micro and Macro Levels
+The Circles protocol operates on two distinct levels:
+
+Micro Level: At this level, users create their own individual currencies, and the protocol manages the interplay between these many distinct tokens through trust connections.
+Macro Level: As trust connections expand, most CRC created by honest participants become effectively fungible with one another, creating an emergent single currency system.
+Token Creation and Issuance
+Each user in the Circles ecosystem can issue their own CRC at a steady rate of 1 CRC per hour. This personal currency issuance is subject to a 7% annual demurrage (similar to a negative interest rate), which gradually reduces the value of existing CRC over time.
+
+The combination of steady issuance and demurrage creates an interesting economic dynamic. For users who hold less than approximately 120,804 CRC, their balance will grow as issuance outpaces demurrage. At this threshold, issuance and demurrage exactly balance out. Above this amount, demurrage will gradually reduce their balance.
+
+Trust and Transactions
+Trust relationships are fundamental to Circles. When a user trusts another user, they are committing to:
+
+Accept the trusted user’s CRC as valid payment
+Allow their own funds to be exchangeable with the trusted user’s CRC
+This trust system enables transactions between users who don’t directly trust each other through what are called “transitive transfers.” For example, if Bob trusts Alice and Alice trusts Carol, Carol can effectively pay Bob by sending her CRC to Alice, who then sends her CRC to Bob.
+
+Technical Implementation
+Circles is built on smart contracts deployed on Gnosis Chain:
+
+Token Contract (EIP-1155): Each user receives an EIP-1155 token that issues 1 CRC per hour and applies 7% annual demurrage. The token can be wrapped as ERC20 for compatibility with external systems.
+Hub Contract: Coordinates user onboarding, records trust connections, transitive transfers and supports group and organisation accounts.
+Sybil Resistance
+A key challenge for a system with universal access is preventing exploitation through creation of multiple accounts (Sybil attacks). Circles addresses this through its trust system - the influence of malicious users is limited by the degree to which others in the network trust them. Trust connections act as a form of social verification, limiting the impact of fake accounts.
+
+Practical Applications and Use Cases
+Universal Basic Income
+While Circles has been positioned as a form of UBI, the actual economic contribution of created money to an individual’s spending is lower than what’s typically expected of a UBI. Nevertheless, it provides a consistent stream of new currency to all participants.
+
+Local and Community Economies
+Circles is well-suited for local economic systems where participants know and trust each other. Community groups can create their own Group CRC to serve as local currencies.
+
+Financial Inclusion
+By removing barriers to participation, Circles can provide financial services to those excluded from traditional banking systems.
+
+Complementary Currency Systems
+Circles can function alongside national currencies, providing an alternative means of exchange particularly valuable during economic downturns or in underserved communities.
+
+Circles in Practice: Metri Wallet
+Metri is a wallet application designed specifically for the Circles ecosystem. It offers:
+
+Functionality to create personal Circles tokens
+The ability to explore Circles groups
+Options to back Circles with stablecoins
+Integration with payment systems for spending CRC anywhere
+Challenges and Considerations
+Adoption Barriers
+Like any alternative currency, Circles faces the challenge of widespread adoption. Its success depends on building a critical mass of users and trust connections.
+
+Value Stability
+The value of CRC relative to goods and services may fluctuate, particularly in the early stages of adoption, though the demurrage feature helps stabilise prices in the long run.
+
+Trust Network Maintenance
+Users must actively manage their trust connections, which introduces an ongoing responsibility that traditional currencies don’t require.
+
+Technical Complexity
+While the end-user experience can be simplified through wallets like Metri, the underlying mechanics of transitive transfers and token issuance are complex.
+
+The Future of Circles
+Circles represents a bold experiment in decentralised finance, challenging traditional notions of money creation and distribution. As the system grows, we can expect:
+
+More sophisticated group structures and economic arrangements
+Integration with other blockchain-based financial systems
+Development of specialised tools and applications built on the Circles protocol
+Potential adoption by communities seeking economic autonomy
+Conclusion
+Circles offers a radical reimagining of money - one where currency issuance is democratic, trust is explicit, and economic relationships are built from the ground up. By placing the power of money creation in the hands of individuals and communities, Circles presents an alternative to centralised financial systems that may help address issues of inequality and financial exclusion.
+
+Whether Circles will emerge as a significant player in the global financial landscape remains to be seen, but its innovative approach to currency design provides valuable insights into how money might evolve in an increasingly decentralised world.

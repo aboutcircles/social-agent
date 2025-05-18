@@ -1,0 +1,50 @@
+The mechanics behind Circles
+
+Circles is built on a few powerful principles that make money creation fair, efficient, and resilient. By moving money creation from centralized institutions to individuals—and by harnessing real-life trust—Circles reimagines currency. Here’s how:
+
+‍
+
+1.  Universal access & continuous issuance
+
+Anyone can join the Circles network without gatekeepers. Once a user is onboard, their account creates tokens (CRC) continuously at a fixed rate of 1 CRC per hour. This guarantees equal opportunity for money creation—regardless of background or the time they join.
+
+‍
+
+2.  Built-in fairness with demurrage
+
+While traditional fiat currencies lose value as new money floods the system, Circles works in reverse: all CRC balances are reduced by 7% per year—a “leaky memory” for money. Just as past achievements fade, older balances decrease relative to freshly created CRC. This natural depreciation ensures that the right to create 1 CRC per hour remains valuable over time and keeps economic influence aligned with active participation.
+
+
+While traditional fiat currencies lose value as new money floods the system, Circles works in reverse: all CRC balances are reduced by 7% per year—a “leaky memory” for money. Just as past achievements fade, older balances decrease relative to freshly created CRC. This natural depreciation ensures that the right to create 1 CRC per hour remains valuable over time and keeps economic influence aligned with active participation.
+3.  Peer-based trust
+
+Each user’s CRC is a unique token. However, real-life trust—whether with friends, family, colleagues, or community members—is captured as trust connections within the system. When you trust someone, you effectively agree to accept their unique CRC. This mechanism enables direct payments among those who trust each other, and transitive trust connections let you send CRC to people you don’t know directly by leveraging intermediaries in the emergent web of trust. This makes the unique CRC in the system implicitly fungible with each other: Although each CRC is uniquely linked to a user, the system's trust network renders them interchangeable as units of value. Every user is incentivized to curate their own trust connections carefully so they can be sure they only accept valuable CRC. This keeps the network robust even without central oversight.
+
+
+Alice sends 100 CRC to Bob. Since there is no direct trust connection, the network sends 100 of Alice’s CRC to Carol, 100 of Carol’s CRC to Dave, and 100 of Dave’s CRC to Bob. Alice’s balance is consequently reduced by 100 CRC while Bob’s balance is increased by 100 CRC. Carol’s and Dave’s balances remain unchanged.
+While having distinct CRC makes Circles very resilient, this implicit fungibility poses challenges to integrations with existing financial infrastructure and limits the flow of CRC in the network.
+
+To overcome these challenges, we introduced the concept of Groups.
+
+‍
+
+4.  Group-based trust
+
+Group-based trust introduces explicit fungibility: Group members can convert their personal CRC for group tokens, which provides the benefit of having a fully fungible currency. In addition, group currencies can serve other purposes, such as promoting local trade, supporting group lending, or extending acceptance of the group CRC, all while remaining integrated with the broader Circles network. In effect, Groups add a flexible layer that lets communities set their own rules and permissions without a one-size-fits-all model. This extra layer facilitates explicit fungibility whereas the peer-based trust network achieves fungibility only implicitly. Explicit fungibility enables smoother integration with traditional finance and emerging Web3 open finance and DeFi.
+
+
+Alice sends 100 CRC to Bob. There is no direct trust connection, but Alice is a member of Group G that Bob trusts. The network converts Alice’s CRC for group CRC and sends these directly to Bob.
+Together, these principles reimagine money creation for a truly global and decentralized economy. Circles distributes the power to create money equally among individuals, leveraging relationships with people we trust to build a dynamic system that meets global commerce needs and empowers local communities.
+‍
+
+Reimagining Money
+
+We often take money for granted—it's so integral to our lives that we rarely question its workings. Bitcoin emerged from a countercultural movement challenging conventional financial systems by envisioning peer-to-peer electronic cash. However, its fixed, finite supply has led Bitcoin to evolve primarily as a speculative store of value rather than as a dynamic medium of exchange.
+
+Building on that spirit of innovation and critical inquiry, Circles extends the idea of decentralizing money by introducing a predictable yet non-fixed supply—designed from first principles to reflect how money should truly function. Every individual can create money, and the protocol guarantees that creation rights are fairly distributed throughout the network.    
+
+
+More than just an upgrade, Circles redefines money from the ground up. Dynamic and adaptable, it restores money to its true purpose: a tool for exchange and empowerment, underpinned by resilience and universal access, and built for long-term sustainability.
+
+
+Of course, the success of Circles depends on active participation and careful cultivation of trust connections. The effectiveness of groups relies on community engagement and clear governance. Like any new technology, the system will evolve based on real-world usage and feedback. But that's exactly what makes Circles exciting – it's an experiment in reimagining money for the digital age, one that puts people and communities at the center of economic activity.
